@@ -1,0 +1,29 @@
+{
+  "name": "CSC59866_2P_POKER",
+  "version": "1.0.0",
+  "description": "Senior Design Repo",
+  "main": "./mainpagee/style.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerianiAiden/CSC59866_2P_POKER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerianiAiden/CSC59866_2P_POKER/issues"
+  },
+  "homepage": "https://github.com/FerianiAiden/CSC59866_2P_POKER#readme",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.2.6",
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "node-forge": "^0.10.0",
+    "node-rsa": "^1.1.1",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.3.5"
+  }
+}
