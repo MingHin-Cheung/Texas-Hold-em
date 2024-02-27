@@ -1,0 +1,116 @@
+h2 {
+  margin: 0rem;
+}
+
+html, body {
+  height: 100%;
+  margin:0px;
+}
+
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.game  {
+ background-image: url('../poker-img/background.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: right; 
+ background-size: cover;
+  
+   display: flex; 
+  
+   flex-direction: column; 
+   align-items: left; 
+  
+
+  
+  height: 120vh;
+  text-align:center;
+  color:white;
+  float: right;
+  width: 60%;
+}
+
+
+
+.intro  {
+  background-image: url('../poker-img/background.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: right; 
+ background-size: cover;
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  color: white;
+  float:left;
+
+  height: 120vh;
+
+  width: 40%;
+
+}
+
+.heading{
+  color: rgb(245, 245, 81); 
+}
+
+#mycounter {
+  color: black;
+  text-align: center;
+  background-color: rgb(245, 245, 81);
+
+}
+
+button {
+    padding: 0.5rem;
+    background-color:red;
+}
+
+
+ 
+
+a.button3{
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color: rgb(182,63,58);
+  text-align:center;
+  transition: all 0.2s;
+}
+a.button3:hover{
+background-color: rgb(241, 91, 91);
+}
+@media all and (max-width:30em){
+  a.button3{
+  display:block;
+  margin:0.2em auto;
+  }
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+  visibility: hidden;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

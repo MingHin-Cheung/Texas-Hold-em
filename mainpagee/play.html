@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>2p poker</title>
+    <link href="/css/play.css" type = "text/css" rel="stylesheet" />
+  </head>
+  <body onload = "enter()">
+    <div class='container'>
+        <div class= 'intro'>
+          <h1>Texas Hold 'Em (2P)</h1>
+          <p><h2 class="heading">Balance in Milliether: <span id="milliethersCount"></span></h2></p>
+          <p>Start the game by placing a small blind (1 milliethers)</p>
+          <p><a a class="button3" id="bet">START</a></p>
+          <p>Phase: <span id="phase"></span></p>
+          <p><span id="betmsg"></span></p>
+          <p><span id="casinomsg"></span></p>
+          <div class="loader" id="loader"></div>
+          <p><h2 class="heading"><span id="bet_total">Total bet: 0</span></h2></p>
+          <input type="text" id="raise_amount" >
+          <p><a class="button3"id="raise">RAISE</a></p>
+          <p><a class="button3"  id="call">CALL</a>
+            <a class="button3" id="check">CHECK</a>
+            <a class="button3" id="fold">FOLD</a>
+            <p><span id="status"></span></p>
+
+
+        </div>
+
+
+
+        <div class= "game">
+          <h2> <div id="mycounter">Timer: 60</div> </h2>
+        <h2><span id="status1">Pick the first two cards</span></h2>
+
+           <p>
+        <img alt="" src="/poker-img/back.jpg"
+           width= 150 height=225 id="card1" onclick="pickCard1()"  />
+        <img alt="" src="/poker-img/back.jpg"
+        width= 150 height=225 id="card2" onclick="pickCard2()"  />
+        <img alt="" src="/poker-img/back.jpg"
+        width= 150 height=225 id="card3"  />
+        <img alt="" src="/poker-img/back.jpg"
+        width= 150 height=225 id="card4"   />
+        <img  id="casinocard1"   />
+           <img id="casinocard2"   />
+        </p>
+
+        <h2><span id="communitycards"></span></h2>
+
+        <p>
+          <img alt="" id="communitycards1"   />
+          <img alt=""  id="communitycards2"   />
+          <img alt=""  id="communitycards3"   />
+          <img alt=""  id="communitycards4"   />
+          <img alt=""  id="communitycards5"   />
+          </p>
+
+        <h2><span id="yourcards"></span></h2>
+        <p>
+        <img alt="" src=""  id="yourcard1"   />
+        <img alt="" src=""  id="yourcard2"   /></p>
+
+
+      </div>
+    </div>
+
+    <script src = "/js/gamelogic.js"></script>
+    <script src = "/js/bott.js"></script>
+    <script src = "/js/jquery.min.js"></script>
+    <script src = "/js/forge.min.js"></script>
+    <script src="/js/web3.min.js"></script>
+    <script src="/js/play.js">
+    </script>
+  </body>
+</html>
